@@ -1,6 +1,10 @@
 .DS_Store
+composer.lock
+
 config.php
+
 tmp/cache/*
 tmp/log/*
 tmp/session/*
+
 src/vendor/*
