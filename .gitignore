@@ -1,0 +1,6 @@
+.DS_Store
+config.php
+tmp/cache/*
+tmp/log/*
+tmp/session/*
+src/vendor/*
