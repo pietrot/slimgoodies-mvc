@@ -1,0 +1,31 @@
+<?php
+
+$config = array(
+    'debug'          => true,
+    'app.name'       => '{app-name}',
+    'app.url'        => '{app-url}',
+    'app.token'      => '{app-token}',
+    'view'           => new \SlimGoodies\Mvc\View(),
+    'templates.path' => BASE_PATH . '/src/app/view',
+    'log.enabled'    => true,
+    'log.level'      => 8,
+    'log.writer'     => new \Slim\Logger\DateTimeFileWriter(array(
+        'path'           => BASE_PATH . '/tmp/log/',
+        'name_format'    => 'Y-m-d',
+        'message_format' => '%label% - %date% - %message%'
+    )),
+    'app.encryption.secret' => '{encryption-secret}',
+    'app.encryption.iv'     => '{encryption-initialization-vector}',
+    'session' => array(
+        'expires'  => '30 minutes',
+        'path'     => '/',
+        'domain'   => null,
+        'secure'   => false,
+        'httponly' => false,
+        'name'     => '{session-cookie-name}',
+        'secret'   => '{session-cookie-secret}'
+    )
+);
+
+return $config;
+

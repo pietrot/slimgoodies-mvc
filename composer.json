@@ -1,0 +1,22 @@
+{
+    "name" : "pietrot/slimgoodies-mvc",
+    "autoload" : {
+        "psr-4" : {
+          "App\\Model\\"       : "src/app/model",
+          "App\\View\\"        : "src/app/view",
+          "App\\Controller\\"  : "src/app/controller",
+          "SlimGoodies\\"      : "src/lib/slimgoodies",
+          "SlimGoodies\\Mvc\\" : "src/lib/slimgoodies/mvc"
+
+        }
+    },
+    "require" : {
+        "slim/slim"      : "2.*",
+        "slim/logger"    : "0.1.*",
+        "twig/twig"      : "1.*"
+    },
+    "require-dev" : { },
+    "config" : {
+        "vendor-dir" : "src/vendor"
+    }
+}
