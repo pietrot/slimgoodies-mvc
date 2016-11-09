@@ -5,6 +5,7 @@
           "App\\Model\\"       : "src/app/model",
           "App\\View\\"        : "src/app/view",
           "App\\Controller\\"  : "src/app/controller",
+          "App\\Middleware\\"  : "src/app/middleware",
           "SlimGoodies\\"      : "src/lib/slimgoodies",
           "SlimGoodies\\Mvc\\" : "src/lib/slimgoodies/mvc"
 
